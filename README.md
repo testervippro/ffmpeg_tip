@@ -44,3 +44,12 @@ ffmpeg -f concat -safe 0 -i file_list.txt -c copy output.m4a
   ffmpeg -i problematic.m4a -c:a aac -strict experimental fixed.m4a
   ```
 - For permission issues, run PowerShell as Administrator
+
+## Record Video window:
+  ```powershell
+ffmpeg -f gdigrab -framerate 30 -i desktop -c:v libx264 -preset ultrafast output.mp4
+  ```
+
+
+
+
